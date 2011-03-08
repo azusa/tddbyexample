@@ -14,7 +14,8 @@ public class Dollar {
 
 	@Override
 	public boolean equals(Object arg0) {
-		return true;
+		Dollar dollar = (Dollar) arg0;
+		return amount == dollar.amount;
 	}
 
 }
