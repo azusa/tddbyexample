@@ -1,14 +1,11 @@
 package jp.fieldnotes.tdd;
 
-import static org.junit.Assert.*;
 import static org.hamcrest.CoreMatchers.*;
+import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-
-
 public class DollarTest {
-
 
 	@Test
 	public void multiPlication() throws Exception {
@@ -17,5 +14,10 @@ public class DollarTest {
 		assertThat(product.amount, is(10));
 		product = five.times(3);
 		assertThat(product.amount, is(15));
+	}
+
+	@Test
+	public void equality() throws Exception {
+		assertTrue(new Dollar(5).equals(new Dollar(5)));
 	}
 }
