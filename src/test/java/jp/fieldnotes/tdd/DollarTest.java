@@ -15,5 +15,7 @@ public class DollarTest {
 		Dollar five = new Dollar(5);
 		five.times(2);
 		assertThat(five.amount, is(10));
+		five.times(3);
+		assertThat(five.amount, is(15));
 	}
 }
