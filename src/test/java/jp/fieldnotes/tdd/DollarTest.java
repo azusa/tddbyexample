@@ -13,9 +13,9 @@ public class DollarTest {
 	@Test
 	public void multiPlication() throws Exception {
 		Dollar five = new Dollar(5);
-		five.times(2);
+		Dollar product = five.times(2);
 		assertThat(five.amount, is(10));
-		five.times(3);
+		product.times(3);
 		assertThat(five.amount, is(15));
 	}
 }
