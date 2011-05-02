@@ -2,8 +2,6 @@ package jp.fieldnotes.tdd;
 
 public class Dollar extends Money {
 
-	public int amount;
-
 	public Dollar(int amount) {
 		this.amount = amount;
 	}
@@ -14,7 +12,7 @@ public class Dollar extends Money {
 
 	@Override
 	public boolean equals(Object arg0) {
-		Dollar dollar = (Dollar) arg0;
+		Money dollar = (Money) arg0;
 		return amount == dollar.amount;
 	}
 

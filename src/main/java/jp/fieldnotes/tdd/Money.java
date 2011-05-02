@@ -1,1 +1,1 @@
-package jp.fieldnotes.tdd;public class Money {}
+package jp.fieldnotes.tdd;public class Money {	protected int amount;}
