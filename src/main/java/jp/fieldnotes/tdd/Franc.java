@@ -1,1 +1,1 @@
-package jp.fieldnotes.tdd;public class Franc {	private final int amount;	Franc(int amount) {		this.amount = amount;	}	public Franc times(int multiplier) {		return new Franc(amount * multiplier);	}}
+package jp.fieldnotes.tdd;public class Franc extends Money {	Franc(int amount) {		this.amount = amount;	}	public Franc times(int multiplier) {		return new Franc(amount * multiplier);	}}
