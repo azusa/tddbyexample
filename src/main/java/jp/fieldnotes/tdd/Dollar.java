@@ -1,6 +1,6 @@
 package jp.fieldnotes.tdd;
 
-public class Dollar {
+public class Dollar extends Money {
 
 	public int amount;
 
