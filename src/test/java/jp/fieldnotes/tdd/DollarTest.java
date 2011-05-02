@@ -15,14 +15,6 @@ public class DollarTest {
 	}
 
 	@Test
-	public void francMultipliutation() throws Exception {
-		Franc five = new Franc(5);
-		assertThat(five.times(2), is(new Franc(10)));
-		assertThat(five.times(3), is(new Franc(15)));
-
-	}
-
-	@Test
 	public void equality() throws Exception {
 		assertTrue(new Dollar(5).equals(new Dollar(5)));
 		assertFalse(new Dollar(5).equals(new Dollar(6)));
