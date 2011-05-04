@@ -1,1 +1,1 @@
-package jp.fieldnotes.tdd;public class Money {	protected int amount;	@Override	public boolean equals(Object arg0) {		Money money = (Money) arg0;		return amount == money.amount && getClass().equals(money.getClass());	}}
+package jp.fieldnotes.tdd;public abstract class Money {	protected int amount;	abstract Money times(int multiplier);	@Override	public boolean equals(Object arg0) {		Money money = (Money) arg0;		return amount == money.amount && getClass().equals(money.getClass());	}	static Money dollar(int amount) {		return new Dollar(amount);	}}
