@@ -3,8 +3,7 @@ package jp.fieldnotes.tdd;
 public class Dollar extends Money {
 
 	public Dollar(int amount, String currency) {
-		this.amount = amount;
-		this.currency = "USD";
+		super(amount, currency);
 	}
 
 	@Override
