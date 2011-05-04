@@ -1,0 +1,1 @@
+package jp.fieldnotes.tdd;import static org.hamcrest.CoreMatchers.*;import static org.junit.Assert.*;import org.junit.Test;public class MoneyTest {	@Test	public void currency() throws Exception {		assertThat("USD", is(Money.dollar(1).currency()));		assertThat("CHF", is(Money.franc(1).currency()));	}}
