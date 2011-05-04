@@ -1,1 +1,1 @@
-package jp.fieldnotes.tdd;public class Franc extends Money {	Franc(int amount) {		this.amount = amount;		this.currency = "CHF";	}	@Override	public Franc times(int multiplier) {		return new Franc(amount * multiplier);	}}
+package jp.fieldnotes.tdd;public class Franc extends Money {	Franc(int amount, String currency) {		this.amount = amount;		this.currency = currency;	}	@Override	public Money times(int multiplier) {		return Money.franc(amount * multiplier);	}}
