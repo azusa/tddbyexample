@@ -1,1 +1,1 @@
-package jp.fieldnotes.tdd;public class Bank {	Money reduce(Expression source, String to) {		Sum sum = (Sum) source;		int amount = sum.augend.amount + sum.addend.amount;		return new Money(amount, to);	}}
+package jp.fieldnotes.tdd;public class Bank {	Money reduce(Expression source, String to) {		Sum sum = (Sum) source;		return sum.reduce(to);	}}
