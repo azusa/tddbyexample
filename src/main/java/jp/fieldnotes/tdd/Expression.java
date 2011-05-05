@@ -1,0 +1,1 @@
+package jp.fieldnotes.tdd;public interface Expression {}
