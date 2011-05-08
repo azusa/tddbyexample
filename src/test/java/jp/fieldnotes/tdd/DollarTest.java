@@ -10,8 +10,8 @@ public class DollarTest {
 	@Test
 	public void multiPlication() throws Exception {
 		Money five = Money.dollar(5);
-		assertThat(five.times(2), is(Money.dollar(10)));
-		assertThat(five.times(3), is(Money.dollar(15)));
+		assertThat(five.times(2), is((Expression) Money.dollar(10)));
+		assertThat(five.times(3), is((Expression) Money.dollar(15)));
 	}
 
 	@Test
