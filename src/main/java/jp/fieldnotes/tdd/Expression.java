@@ -1,1 +1,1 @@
-package jp.fieldnotes.tdd;public interface Expression {	Money reduce(String to);}
+package jp.fieldnotes.tdd;public interface Expression {	Money reduce(Bank bank, String to);}
